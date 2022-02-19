@@ -44,7 +44,7 @@ function findInList() {
 }
 
 
-
+/*
 function sortIt(array) {
     for(i=0; i < array.lengh-1; i++) {
         for (let j = 0; j < array.length-1; j++) {
@@ -55,5 +55,16 @@ function sortIt(array) {
             }
         }
         return array;
+    }
+}
+*/
+
+const numberGridArray = [] ;
+console.log(numberGridArray);
+
+let columns = document.getElementsById('columns') ;
+for (let i = 1; i < columns.length-1; i++) {
+    for (let j = 2; j < columns.length-1; j++) {
+
     }
 }

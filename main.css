@@ -109,6 +109,69 @@ body {
   float: right;
 }
 
+
+input[type="number"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1rem;
+  padding: 0 16px;
+  width: 100%;
+  height: 50px;
+}
+
+ form input[type="text"] {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1rem;
+  margin-left: 0 ;
+  padding: 0 16px;
+  width: 100%;
+  height: 60px;
+ 
+}
+select {
+  background-color: #3b4148;
+  border-radius: 0px 3px 3px 0px;
+  color: #a9a9a9;
+  margin-bottom: 1rem;
+  padding: 0 16px;
+  width: 100%;
+  height: 50px;
+}
+
+ form input[type="submit"] {
+  background: #ebb698;
+  font-size: 1.3em;
+  border: 0;
+  width: 50%;
+  height: 40px;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  border-radius: 3px;
+  color: #05122c;
+  cursor: pointer;
+}
+form input[type="submit"]:hover {
+  background: #e9bfcf;
+}
+ /*Removed flexbox queries*/
+ .Display-text {
+  font-weight: 400;
+   text-align: center;
+   margin-right: 4.2rem;
+   margin-top: 2.5rem;
+   font-size: 2.5em;
+ }
+
+.flexbox-container .item3 [input]{
+  width: 50%;
+ }
+
+ .bookform {
+   margin-left: 30rem;
+ }
 /*Media queries (ugh)*/
 @media screen and (max-width: 710px) {
   .topnav a:not(:first-child) {display: none;}
@@ -132,6 +195,8 @@ body {
   }
 }
 
+
+
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
@@ -147,6 +212,3 @@ body {
   }
 }
 /**/
-
-
-
