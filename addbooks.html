@@ -15,6 +15,7 @@
             <img class="logo" src="/images/Spanios.png" alt=""  onclick="location.href='/index.html'">
             <a href="/index.html" ">Home</a>
             <a href="/addbooks.html" class="active">Books</a>
+            <a href="/Booklist.html">browse</a>
             <a href="/contact.html">Contact</a>
             <a href="/about.html">About</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -24,7 +25,7 @@
         </div>
 
         <div class="container">
-            <h1 class="Display-text">
+            <h1 class="Display1-text">
               Enter Book Information  <i class="fa fa-barcode" aria-hidden="true"></i>
         </div> 
 
@@ -33,7 +34,7 @@
                 <form id="book-list" class="bookForm" action="">
 
                     <label for="title" class="btiitle">Title</label>
-                    <input type="text" placeholder="Title" id="title">
+                    <input type="text" placeholder="Title" id="title" pattern="please enter title" onclick="" >
 
                     <label for="text" class="aName">Author</label>
                     <input type="text" placeholder="Author" id="author">
@@ -60,8 +61,8 @@
                     
                 </form>
 
-                <input type="submit" id="btn" value="Add">
-                <input type="submit" id="btn" value="Delete"> <i class="fa fa-trash" aria-hidden="true"></i>
+                <input type="submit" id="btn1" value="Add" onclick="">
+                <input type="submit" id="btn2" value="Delete" onclick=""> <i class="fa fa-trash trash" aria-hidden="true"></i>
 
             </div>
         </div>
