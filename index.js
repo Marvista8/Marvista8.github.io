@@ -7,3 +7,11 @@ function myFunction() {
     x.className = "topnav";
   }
 } 
+
+const searchBar = document.getElementsById('searhBar');
+
+searchBar.addEventListener('keypu', (event) => {
+
+})
+
+const namesFromDOM = document.getElementsByClassName("Title");
