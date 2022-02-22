@@ -10,39 +10,39 @@
     <title>Rare Bookstore</title>
 </head>
 <div>
-    <!-- The Navigation menu bar -->
-    <div class="topnav" id="Topnav">
-        <img src="/images/Spanios.png" onclick="location.href='/index.html'" alt="">
+    <div id="mySidenav" class="sidenav">
+        <img class="logo" src="/images/Spanios.png" alt="company logo">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="/index.html">Home</a>
-        <a href="/addbooks.html">Books</a>
-        <a href="/Booklist.html">browser</a>
-        <a href="/contact.html">Contact</a>
         <a href="/about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <!--This is the Sign up page information to be stored in local storage to create user profile-->
-    <div>
-        <h1 class="Display-text">Sign Up </h1>
-    </div>
+        <a href="/Booklist.html">Browse</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="main">
+        <div>
+            <span style="font-family:'mixta-didone-alt, serif'; font-weight: 900;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Book Club Sign Up</span>
+            <h1 class="Display3">Sign Up </h1>
+            <p class="Subhead3">Please complete information To Join Our Exclusize Book Club.</p>
+        </div>
+            <!--This is the Sign up page information to be stored in local storage to create user profile-->
+        <div class="flex">
+            <form name="myForm" class="loginForm" autocomplete="on">
+                 <label for="name" name="fname" >First name</label>
+                 <input type="text" id="fname" placeholder="First Name" required>
+                
+                 <label for="name" name="lname" >Last name</label>
+                 <input type="text" id="lname" placeholder="Last Name" required>
     
-    <div class="flexbox-container">
-        <form class="Login-form">
-             <label for="name" name="fname" >First name</label>
-             <input type="text" id="fname">
-            
-             <label for="name" name="lname" >Last name</label>
-             <input type="text" id="lname">
-
-            <label for="login" name="email">Email</label>
-            <input type="email" id="email" aria-required="true" pattern="" placeholder="Email">
-
-            <label for="passwords" name="password">Password</label>
-            <input type="password" id="pswd" aria-required="true" pattern="" placeholder="Password">
-
-            <button id="btn2" onclick="validation()">Sign up</button>
-        </form>
-    </div>
+                <label for="login" name="email">Email</label>
+                <input type="email" id="email" pattern="" placeholder="Email" required>
+    
+                <label for="passwords" name="password">Password</label>
+                <input type="password" id="pswd" pattern="[a-AZ-z]" placeholder="Password" min="8" required>
+                <br>
+                <button id="btn2" class="signupBtn2" onsubmit="return validateForm()">Sign up</button>
+                <button id="btn3" class="cancelBtn" onclick="validate()">cancel</button>
+            </form>
+        </div>
+      </div>
 </body>
 </html>

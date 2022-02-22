@@ -1,45 +1,54 @@
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
 function openNav() {
    document.getElementById("mySidenav").style.width = "250px";
    document.getElementById("main").style.marginLeft = "250px";
    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
  }
  
- /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
  function closeNav() {
    document.getElementById("mySidenav").style.width = "0";
    document.getElementById("main").style.marginLeft = "0";
    document.body.style.backgroundColor = "white";
  }
 
-
-
-
-
-// Form validation code.
- function validate() {
-
+ function validateForm() {
+   let l = document.forms["myForm"]["lname"].value;
+   let x = document.forms["myForm"]["fname"].value;
+   if (x == "") {
+     alert("Please fill out your first name, thank you!");
+     return false;
+   }
  }
- /*
-if( document.myForm.Name.value == "" ) {
-    alert( "Please provide your name!" );
-   document.myForm.Name.focus() ;
-   return false;
-}
-if( document.myForm.EMail.value == "" ) {
-    alert( "Please provide your Email!" );
-   document.myForm.EMail.focus() ;
-   return false;
-}
-if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
-   document.myForm.Zip.value.length != 5 ) {          
-   alert( "Please provide a zip in the format #####." );
-   document.myForm.Zip.focus() ;
-   return false;
-}
-if( document.myForm.Country.value == "-1" ) {
-   alert( "Please provide your country!" );
-   return false;   }
-   return( true );
-}
-*/
+
+
+/*// Form validation code.
+ function validate() {
+const loginForm = document.getElementsByClassName('loginForm').value;
+const fname = document.getElementById('fname').value;
+const lname = document.getElementById('lname').value;
+const email = document.getElementById('email').value;
+const pswd = document.getElementById('pswd').value;
+const btn2 = document.getElementById('btn2').value;
+
+console.log(loginForm, fname, lname, email, pswd, btn2); 
+
+   if (document.loginForm.fname.value == "") {
+      alert("Please provide your first name!"); 
+      document.loginForm.fname.value.focus();
+      return false;
+   }
+   if (document.loginForm.lname.value == "") {
+      alert("Please provide you last name!");
+      document.loginForm.lname.value.focus();
+      return false;
+   }
+   if (document.loginForm.email.value == "") {
+      alert("Please provide your email address!");
+      document.loginForm.email.value.focus();
+      return false;
+   }
+   if (document.loginForm.pswd.value == "") {
+      alert("Please provide you password!");
+      document.loginForm.pswd.value.focus();
+      return false;
+   }
+ }*/

@@ -10,19 +10,18 @@
     <title>Rare Bookstore</title>
 </head>
 <body>
-    <!-- The Navigation menu bar -->
-    <div class="topnav" id="Topnav">
-        <img src="/images/Spanios.png" alt="logo">
-        <a href="/index.html" class="active" onclick="document.getElementsByClassName()">Home</a>
-        <a href="/Booklist.html" >Books</a>
-        <a href="/contact.html">Contact</a>
+    <div id="mySidenav" class="sidenav">
+        <img class="logo" src="/images/Spanios.png" alt="company logo">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-        </a>
-    </div>
-    <!--This is the search bar query that performs a find() and filter() on the books-->
-    <div>
+        <a href="/Booklist.html">Browse</a>
+        <a href="#">Contact</a>
+      </div>
+<div id="main">
+    <span style="font-family:'mixta-didone-alt, serif'; font-weight: 900;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; See Our Collection</span>
+     <!--This is the search bar query that performs a find() and filter() on the books-->
+     <div>
         <form id="searchBar" class="search" action="">
             <input type="text" placeholder="search" pattern="['A-Za-z']{.5,}" title="Please provide a book title" >
             <button id="searchBtn">submit</button>
@@ -31,8 +30,8 @@
     <!--This is the container for the title-->
 
     <!--This is a book menu for the genre catagory types.-->
-    <div class="flexbox-container">
-        <div class="fboxitem">
+    <div class="flex-books">
+        <div class="container">
             <img id="nPhotos" class="Roger"  src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRmM5fZV8czKKL91fLNBLniNj-dnE4cuAu8cDFdAuB6jl3b6IVo_31efNDGll9JcLXS1joafY4RcON9vnJv7olTAjhmj1Zl93EgUSDtKB9Okhven6DChTAM&usqp=CAE" alt="picture of man with beard staring">
             <br>
             <label class="names " for="img-photo1-1"></label>
@@ -140,5 +139,7 @@
             <label class="names" for="img-photo1-18">Kumar</label>
         </div>                                           
     </div>
+</div>
+   
 </body>
 </html>
