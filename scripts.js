@@ -26,45 +26,35 @@ function resetFindInList() {
 }
 
 
-
-
 function reloadPage() {
     window.location.reload();
     return false;
 }
 
 
-function findInGrid( ) {
-    let 
+function findInGrid() {
+   let inputText = document.querySelector('input').value;
+   let findNumber = document.getElementsByTagName('span');
+   console.log(inputText);
+   for ( let i = 0; i < findNumber.length; i++) {
+       findNumber[inputText].classList.add('spanHighlighted');
+   }
 }
 
 
 function findInList() {
-
+    let listNumber = document.querySelector('input').value;
+    let numberRow = document.getElementsByTagName('span');
+    console.log(listNumber);
+    for (let i = 0; i < numberRow.length; i++) {
+        numberRow[listNumber].classList.add('spanHighlighted');
+    }
 }
 
 
-/*
 function sortIt(array) {
-    for(i=0; i < array.lengh-1; i++) {
-        for (let j = 0; j < array.length-1; j++) {
-            if (array[j] > array[j+1]) {
-            let temp = array[j];
-            array[j] = array[j+1];
-            array[j+1] = temp;
-            }
-        }
-        return array;
+    let numberArray = document.getElementsByTagName('span');
+    console.log(numberArray);
+    for (let i = 0; i < numberArray.length-1; i++) {
     }
-}
-*/
-
-const numberGridArray = [] ;
-console.log(numberGridArray);
-
-let columns = document.getElementsById('columns') ;
-for (let i = 1; i < columns.length-1; i++) {
-    for (let j = 2; j < columns.length-1; j++) {
-
-    }
-}
+  }
