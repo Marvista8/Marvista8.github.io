@@ -7,33 +7,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/esg5vch.css">
     <link rel="stylesheet" href="/main.css">
-    <script src="/index.js" defer></script>
+    <script defer src="/index.js"></script>
     <title>Spanios Bookstore</title>
 </head>
 <body>
-    <!-- The Navigation menu bar -->
-    <div class="topnav" id="myTopnav">
-        <img class="logo" src="/images/Spanios.png" alt=""  onclick="location.href='/index.html'">
-        <a href="/index.html" class="active" onclick="location.href='/index.html'">Home</a>
-        <a href="/addbooks.html">Books</a>
-        <a href="/Booklist.html">browse</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+  <div id="mySidenav" class="sidenav">
+    <img class="logo" src="/images/Spanios.png" alt="company logo">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/index.html">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/Booklist.html">Browse</a>
+    <a href="#">Contact</a>
+  </div>
+  <div id="main">
+    <span style="font-family:'mixta-didone-alt, serif'; font-weight: 900;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Welcome! To Spanios Bookstore</span>
+    <!--This is an img and text container-->
+    <div id="flex">
+      <div class="container">
+        <img class="photo" src="/images/pexel img.png" alt="Woman grabbing a book from on high">
       </div>
-      <!--This is an img and text container-->
-     <div class="flexbox-container">
-       <div class="flex item1">
-         <img class="photo" src="/images/pexel img.png" alt="Woman grabbing a book from on high">
-       </div>
-       <div class="flex item2">
-         <h1 class="display1-text">Sp<span class="bold">a</span>nios <span class="light-text">Bookstore</span></h1>
-         <h2 class="subhead-text">Discover Something New Today</h2>
-         <p class="para">Looking for fun and excitement? Look no further, as we have the rarest selection of books from all around the world. Our selection can't be beat. Sign up too are book club and get a special prize every month and the chance to win a grand prize. Join Today!</p>
-         <button class="btn" onclick="location.href='/signup.html'">Sign up</button>
-       </div>
-     </div>
+      <div class="container">
+        <h1 class="Display1">Sp<span class="boldText">a</span>nios <span class="lightText">Bookstore</span></h1>
+        <h2 class="Subhead">Discover Something New Today</h2>
+        <p class="para">Looking for fun and excitement? Look no further, as we have the rarest selection of books from all around the world. Our selection can't be beat. Sign up too are book club and get a special prize every month and the chance to win a grand prize. Join Today!</p>
+        <button class="signupBtn" onclick="location.href='/signup.html'">Sign up</button>
+      </div>
+    </div>
+  </div>
+    
 </body>
 </html>

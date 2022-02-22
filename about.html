@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="/index.js"defer></script>
+    <script defer src="/index.js"defer></script>
     <title>Rare Bookstore</title>
 </head>
 <body>
-        <div class="topnav" id="Topnav">
-            <img src="/images/Spanios.png" alt="" onclick="location.href='/index.html'">
-            <a href="./index.html" onclick="document.getElementsByClassName()">Home</a>
-            <a href="./addbooks.html">Books</a>
-            <a href="/Booklist.html">browse</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./about.html" class="active">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-            </a>
+    <div id="mySidenav" class="sidenav">
+        <img class="logo" src="/images/Spanios.png" alt="company logo">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/Booklist.html">Browse</a>
+        <a href="#">Contact</a>
+      </div>
+      <div id="main">
+        <span style="font-family:'mixta-didone-alt, serif'; font-weight: 900;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Mission<span>
+        <div class="flex">
+            <div class="container">
+                <img class="book-photo" src="/images/pexels-tuur-tisseghem-626986.jpg" alt="A picture of a bookstore from the outside.">
+            </div>
+            <div class="container">
+                <h1 class="Display2 bgColor">Our Mission</h1>
+                <h2 class="Subhead2">Exploring The World So You Don't Have To.</h2>
+                <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore iste ipsam itaque id eos quae, nisi eaque quisquam numquam accusantium similique ab aspernatur quas. Quod, repellat! Vel architecto voluptatibus quas quo ipsa recusandae expedita aliquam fugiat eaque. Eum hic excepturi temporibus recusandae quae dicta ea libero eligendi dignissimos, quas quaerat.</p>
+            </div>
         </div>
+      </div>
 </body>
 </html>

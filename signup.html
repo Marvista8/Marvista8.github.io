@@ -28,7 +28,7 @@
     </div>
     
     <div class="flexbox-container">
-        <form class="bookform">
+        <form class="Login-form">
              <label for="name" name="fname" >First name</label>
              <input type="text" id="fname">
             
@@ -36,12 +36,12 @@
              <input type="text" id="lname">
 
             <label for="login" name="email">Email</label>
-            <input type="email" id="email" aria-required="true" placeholder="Email">
+            <input type="email" id="email" aria-required="true" pattern="" placeholder="Email">
 
             <label for="passwords" name="password">Password</label>
-            <input type="password" id="pswd" aria-required="true" placeholder="Password">
+            <input type="password" id="pswd" aria-required="true" pattern="" placeholder="Password">
 
-            <input type="submit" value="Sign up">
+            <button id="btn2" onclick="validation()">Sign up</button>
         </form>
     </div>
 </body>

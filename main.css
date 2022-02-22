@@ -1,311 +1,163 @@
 /*Universal styling*/
 * {
     box-sizing: border-box;
+    margin: 0;
 }
-body { 
-  margin: 0;
-}
-/*Top navigation main color*/
-.topnav {
-    background-color: #082618;
-    overflow: hidden;
-  }
-  /*Topnav logo*/
-  .logo {
-    float: right;
-    margin-right: 15px;
-} 
-  /*Topnav link styling */
-  .topnav a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 18px 20px;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  /*link hover*/
-  .topnav a:hover {
-    background-color: #465458;
-    color: #ffff;
-  }
-  /*active link*/
-  .topnav a.active {
-    background-color: #D94343;
-    color: white;
-  }
-  /*hides icon on topnav*/
-  .topnav .icon {
-    display: none;
-  }
 
-/*Flexbox containers & items*/
-.flexbox-container {
+body {
+  background-color: #e0e0e0;
+ }
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; 
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+
+.sidenav .logo {
+  padding: 8px 8px 8px 32px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #e71e1e;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+#flex {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-flow: row, wrap;
+
+}
+
+
+
+
+/*Text stylings*/
+
+.Display1 {
+  font-family: 'mixta-didone-alt', serif;
+  font-weight: 700;
+  font-size: 4em;
+  margin: 4em 0 0 3em;
+}
+
+.Display2 {
+  font-weight: 600;
+  font-size: 2em;
   text-align: center;
 }
-/*Responsive image (global)*/
-.photo {
-  width: 100%;
-  height: auto;
+
+.boldText {
+  color: #3cd86b;
 }
-/*text styling */
-.display1-text {
-  font-family: mixta-didone-alt, serif;
-  font-weight: 800;
-  font-size: 3.5em;
-}
-.subhead-text {
-  font-size: 1.8em;
-  color: #465458;
-  margin-top: -1em;
-}
-.bold {
-  font-size: 1.2em;
-  color: #2E8C8C;
-}
-.light-text {
+
+.lightText {
   font-weight: 500;
-  color: #D94343;
+  color: #e71e1e;
 }
+
+.Subhead {
+  font-weight: 100;
+  font-size: 3em;
+  color: #666666;
+  padding: 2px;
+  margin-left: 3.9em;
+}
+
+.Subhead2 {
+  text-align: center;
+  font-weight: 100;
+  padding: 20px;
+  margin: 0.5em;
+  color: #666666;
+}
+
 .para {
-  word-wrap: break-word;
-  margin-top: 3.5rem;
+  font-size: 2.5em;
+  padding: 20px 40px;
+  margin: 2em 4em;
+}
+
+.para1 {
+  font-weight: 100;
+  font-size: 1.3em;
+  padding: 20px;
+  margin-left: 4em;
+  margin-right: 4em;;
+}
+
+.hero-text {
+  text-align: center;
+}
+
+/* Buttons*/
+
+.signupBtn {
+  padding: 25px 60px;
+  background-color: #e71e1e;
   font-size: 1.5em;
-}
-.item2 {
-  width: 500px;
-  padding: 10px;
-  margin-left: 260px;
-}
-
-/*button stylings*/
-.btn {
-  background-color: #082618;
-  font-size: 1.2em;
-  color: #f2f2f2;
-  padding: 18px 45px;
+  color: #f1f1f1;
   border-radius: 4px;
-  box-shadow: 4px 3px rgb(0, 0, 0, 0.2);
-  margin-top: 1.5rem;
-}
-#btn1 {
-  background-color: #182c23;
-  font-size: 1.3em;
-  color: #ffffff;
-  padding: 25px 100px;
-  border-radius: 4px;
+ box-shadow: 4px 3px 2px rgba(0, 0 ,0, 0.2);
+ margin-left: 8em;
 }
 
-#btn2 {
-  background-color: #D94343;
-  font-size: 1.3em;
-  color: #ffffff;
-  padding: 25px 100px;
-  border-radius: 4px;
+body, html {
+  height: 100%;
 }
 
-.fboxitem {
-  margin: 3rem;
-}
-.topnav input[type=text] {
-  background-color: #2d3a33;
-  float: right;
-  padding: 6px;
-  margin-top: 12px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
+.book-photo {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding-left: 150px;
+  padding-bottom: 25px;
 }
 
-.trash{
-  padding: 10px;
-  height: 80px;
-  width: 100px;
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a .sidenav .logo {font-size: 18px;}
 }
-
-
-.topnav .search {
-  float: right;
-}
-
-
-input[type="number"] {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  padding: 0 16px;
-  width: 100%;
-  height: 50px;
-}
-
- form input[type="text"] {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  margin-left: 0 ;
-  padding: 0 16px;
-  width: 100%;
-  height: 60px;
- 
-}
-select {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #ffffff;
-  margin-bottom: 1rem;
-  padding: 0 16px;
-  width: 100%;
-  height: 50px;
-}
-
- form input[type="submit"] {
-  background: #ebb698;
-  font-size: 1.3em;
-  border: 0;
-  width: 50%;
-  height: 40px;
-  margin-top: 2rem;
-  margin-left: 3rem;
-  border-radius: 3px;
-  color: #05122c;
-  cursor: pointer;
-}
-form input[type="submit"]:hover {
-  background: #e9bfcf;
-}
- /*Removed flexbox queries*/
- .Display-text {
-  font-weight: 400;
-   text-align: center;
-   margin-right: 4.2rem;
-   margin-top: 2.5rem;
-   font-size: 2.5em;
- }
-
-.flexbox-container .item3 [input]{
-  width: 50%;
- }
-
- .bookform {
-   margin-left: 30rem;
-   margin-top:  6rem
- }
-/*Media queries (ugh)*/
-@media screen and (max-width: 710px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 710px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.Display1-text {
-  margin-left: 40rem;
-  margin-top: 6rem;
-  font-family: mixta-didone-alt, serif;
-  font-size: 4em;
-  font-weight: 800;
-}
-
-form input[type="email"] {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #ffffff;
-  margin-bottom: 1em;
-  padding: 0 16px;
-  width: 100%;
-  height: 50px;
-}
-
-form input[type="password"] {
-  background-color: #3b4148;
-  border-radius: 0px 3px 3px 0px;
-  color: #ffffff;
-  margin-bottom: 1em;
-
-  padding: 0 16px;
-  width: 100%;
-  height: 50px;
-}
-
-
-  /*Media queries for responsiveness*/
-  @media screen and (max-width: 1200px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    .logo {
-        float: none;
-        margin-left: 10px;
-        font-size: 0.8em;
-    }
-@media screen and (max-width: 1200px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .login-form {
-    height: 100%;
-    width: 250px;
-    margin: 0 auto;
-  }
-  select {
-    height: 100%;
-    width: 250px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 300px) {
-  .items h1 {
-      padding: 10px 20px;
-  }
-  .items h3 {
-      padding: 10px 20px;
-  }
-  .items img {
-      float: right;
-      height: auto;
-      width: 100%;
-      max-width: 1000px;
-      position: relative;
-     top: 200px;
-  }
-  .login-form {
-    height: 100%;
-    width: 250px;
-    margin: 0 auto;
-    }
+@media screen and (max-width: 400px) {
+  #flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
 }
